@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Burn Calculator</title>
+    <link rel="stylesheet" href="base.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Calorie Burn Calculator</h1>
+    </header>
+    <main>
+        <div>
+            <label for="weight"><h2>What is your weight in pounds?</h2></label>
+            <input id="weight-input" type="text" id="weight" placeholder="150" value="">
+            <button id="weight-button" type="submit">Add Weight</button>
+            
+        </div>
+        <div>  
+            <label for="activity"><h2>Enter the number of your activity?</h2></label>
+            <input id="activity-input" type="text" id="activity" placeholder="# of activity" value="">
+            <button id="activity-button"type="submit">Add Activity</button>
+        </div>
+        <div id="list-wrapper">
+            <ul id="activity-list1"><h3>Activity List</h3></ul>
+            <ul id="activity-list2"></ul>
+        </div>
+        <div>
+            <label for="intensity"><h2 id="intensity-label">What was the intensity of your workout?</h2></label>
+            <p>1=Low 2=Medium 3=High</p>
+            <input id="intensity-input" type="text" id="intensity" placeholder="# of intensity" value="">
+            <button id="intensity-button" type="submit">Add Intensity</button>
+        </div>
+        <div>
+            <label for="time"><h2>How long was your workout (in minutes)?</h2></label>
+            <input id="time-input" type="text" id="time" placeholder="30" value="">
+            <button id="time-button"type="submit">Add Minutes</button>
+        </div>
+        <div id="input-wrapper">
+            <ul id="input-label">
+                <label for="weight"><h3>Weight/kg = </h3></label>
+                <label for="activiy"><h3>Activity = </h3></label>
+                <label for="intensity"><h3>Intensity = </h3></label>
+                <label for="time"><h3>Minutes = </h3></label>
+            </ul>
+            <ul id="input-list">
+                <li id="weight"></li>
+                <li id="activity"></li>
+                <li id="intensity"></li>
+                <li id="time"></li>
+            </ul>
+        </div>
+        <div>
+            <h1 id="output">Your calories burned are:  <span id="results"></span></h1>
+        </div>
+    </main>
+    
+</body>
+</html>
